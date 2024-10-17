@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Carrinho de Compras</h1>
+
+    <div class="produto">
+        <h2>Produtos Disponíveis</h2>
+        <ul id="lista-produtos"></ul>
+    </div>
+
+    <div class="botoes">
+        <h2>Ações</h2>
+        <input type="text" id="nome-produto" placeholder="Nome do produto">
+        <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+        <button onclick="removerDoCarrinho()">Remover do Carrinho</button>
+        <button onclick="ordenarCarrinho()">Ordenar Carrinho</button>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
+
+    <div class="carrinho">
+        <h2>Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total-carrinho">Total: R$0.00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
